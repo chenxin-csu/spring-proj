@@ -9,6 +9,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import test.config.BeanConfig;
 
+import javax.inject.Inject;
+
 /**
  * Created by jackie on 2/15/16.
  */
@@ -16,9 +18,8 @@ import test.config.BeanConfig;
 @ContextConfiguration(classes = BeanConfig.class)
 public class CDTest {
 
-	@Autowired
 	private CD cd;
-	@Autowired
+	@Inject
 	private CD1 cd1;
 
 	@Test
